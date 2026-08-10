@@ -1,4 +1,4 @@
-==================Router Configuration==================
+=============================Router Configuration==================================
 Router>enable
 Router#configure terminal
 Router#show running-config -----> it used for showing the running config where we can find the which port is empty
@@ -7,7 +7,7 @@ Router(config)#interface gigabitethernet 0/0
 Router(config-if)#no shutdown
 Router(config-if)#exit
 
-------Inter Vlan Routing Config-------------------------
+------------------------Inter Vlan Routing Config----------------------------------
 
 Router(config)#interface gigabitethernet 0/0.10
 Router(config-subif)#
@@ -39,7 +39,7 @@ Router(dhcp-config)#dns-server 8.8.8.8
 Router(dhcp-config)#exit
 Router(config)#ip dhcp excluded-address 163.47.36.1 163.47.36.200 -----( Mane eita use korle baki IP gulo amra static hishebe use korte parbo)
 
---------------------Check particular DHCP information------------------------------------
+------------------------Check particular DHCP information------------------------------------
 
 Router#show ip dhcp pool DHCPV30
 Pool DHCPV30 :
