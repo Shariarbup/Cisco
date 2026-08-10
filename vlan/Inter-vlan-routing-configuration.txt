@@ -55,5 +55,18 @@ Pool DHCPV30 :
  163.47.36.1          163.47.36.1      - 163.47.36.254     0    / 1     / 254
 
 
+interface GigabitEthernet0/0.40
+encapsulation dot1Q 40
+ip address 192.168.11.65 255.255.255.224
+Router(config)#ip dhcp pool DHCP40
+Router(dhcp-config)#network 192.168.11.64 255.255.255.224
+Router(dhcp-config)#default-network 192.168.11.65
+                            ^
+% Invalid input detected at '^' marker.
+	
+Router(dhcp-config)#default-router 192.168.11.65
+Router(dhcp-config)#dns-server 8.8.8.8
+
+
 
 
