@@ -66,6 +66,7 @@ Router(dhcp-config)#default-network 192.168.11.65
 	
 Router(dhcp-config)#default-router 192.168.11.65
 Router(dhcp-config)#dns-server 8.8.8.8
+Router(dhcp-config)#ip dhcp excluded-address 192.168.11.65
 
 
 
